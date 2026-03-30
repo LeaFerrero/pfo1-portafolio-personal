@@ -1,0 +1,174 @@
+*, html
+{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #58180D;
+  font-family:  Cinzel;
+  
+
+}
+
+h2{
+  border-bottom: 3px solid #C0AD6A;
+  padding-bottom: 0.1em;
+  margin-bottom: 0.25em;
+}
+
+p{
+  font-family: Lora;
+  font-weight: 500;
+  font-size: clamp(0.8em, 5vw, 1em);  
+}
+
+body{
+  background-color: #EEE5CE;
+  background-image: url("../img/background.jpg");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex: 1;
+}
+
+header {
+  background-color: #C9AD6A;
+  padding: 3em 0em 2em 0em;
+  text-align: center;
+}
+
+nav {
+  background-color: #e5d6a7;
+  padding: 1em;
+  font-family: Fira Sans;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5em;
+  a{
+    text-decoration: none;
+    color: #000;
+  } 
+}
+
+.section-main
+{
+  display: flex;
+  flex-direction: column;
+  margin: 2em 1em;
+  animation: show 1.5s ease-in-out;
+}
+
+.sobre-mi-texto{
+  margin-bottom: 1em;
+  display: flex;
+  padding: 5%;
+  flex-direction: column; 
+  justify-content: center;
+}
+
+
+.photo{
+  border-image: url("../img/border.png") 12 stretch;
+  border-image-outset: 12px 0px;
+  border-image-width: 15px;
+  box-shadow: 0px 0px 5px 5px #8f8971;
+  align-self: center;
+  max-width: 90%;
+}
+
+form{
+  padding-top: 1em ;
+  display: flex;
+  flex-direction: column;
+}
+
+input
+{
+    width: 100%;
+    font-size: clamp(0.7em, 2vw, 1em);
+    padding: 0.6em 0.6em;
+    border: none;
+    outline: none;
+    background: none;
+    background-color: #fff;
+    resize: none;
+    font-family: var(--fontForm);
+    margin-bottom: 1em;
+}
+
+button
+{
+    cursor: pointer;
+    width: 100%;
+    background-color: #BBAD82;
+    font-size: 1.3em;
+    padding: 0.6em;
+    border: none;
+}
+
+button:hover
+{
+    background-color: #d2e6c8;
+}
+
+
+
+footer{
+  background-color: #BBAD82;
+  text-align: center;
+  padding: 4em 4em 8em 4em;
+}
+
+#section-redes-sociales
+{
+
+    h3{
+      padding-top: 1em;
+      margin-bottom: 1em;
+      font-size: clamp(1em, 5svw, 1.5em);
+    }
+
+    a{
+      text-decoration: none;
+      color: #000;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family: var(--fontFooter);
+      font-size: clamp(0.5em, 5svw, 1em);
+    }
+    
+    li{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    img {
+        max-width: 15%;
+        height: auto;
+    }
+}
+
+/* Mediaqueries */
+
+@media screen and (min-width: 880px)
+{
+    .social-media-links-list img{
+        max-width: 15%;
+        height: auto;
+    }
+}
+
