@@ -9,14 +9,21 @@
 h1, h2, h3 {
   color: #58180D;
   font-family:  Cinzel;
-  
+  padding-bottom: 0.1em;
+  margin-bottom: 0.25em;
+}
 
+h1{
+  font-size: clamp(2em, 5vw, 2.5em);
 }
 
 h2{
   border-bottom: 3px solid #C0AD6A;
-  padding-bottom: 0.1em;
-  margin-bottom: 0.25em;
+  font-size: clamp(1.5em, 5vw, 2em); 
+}
+
+h3{
+  font-size: clamp(1em, 5vw, 1.5em);
 }
 
 p{
@@ -35,6 +42,7 @@ body{
 
 main{
   flex: 1;
+  padding: 0em 2em;
 }
 
 header {
@@ -50,8 +58,7 @@ nav {
   text-transform: uppercase;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 5em;
+  justify-content: space-evenly;
   a{
     text-decoration: none;
     color: #000;
@@ -64,24 +71,91 @@ nav {
   flex-direction: column;
   margin: 2em 1em;
   animation: show 1.5s ease-in-out;
+  margin: 5em;
 }
 
-.sobre-mi-texto{
-  margin-bottom: 1em;
+.contenedor-texto{
+  margin-bottom: 3em;
   display: flex;
-  padding: 5%;
   flex-direction: column; 
   justify-content: center;
 }
 
+img{
+  max-width: 70%;
+}
 
-.photo{
-  border-image: url("../img/border.png") 12 stretch;
+#sobre-mi img, #peliculas img{
   border-image-outset: 12px 0px;
   border-image-width: 15px;
   box-shadow: 0px 0px 5px 5px #8f8971;
   align-self: center;
-  max-width: 90%;
+  margin: 2em;
+  transition: all 0.5s;
+}
+
+#sobre-mi img:hover, #peliculas img:hover{
+  box-shadow: 0px 0px 20px 5px #8f8971;
+  transform: scale(0.9);
+}
+
+#tarjetas article{
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0em;
+  background-color: #d2e6c8;
+  padding: 2em;
+  transition: all 0.5s;
+}
+
+#tarjetas article:hover{
+  box-shadow: 0px 0px 20px 5px #8f8971;
+  transform: scale(0.9);
+}
+
+.habilidades-contenedor{
+  display: flex;
+  flex-direction: column;
+}
+
+.habilidades-bloque{
+  flex: 1;
+}
+
+table{
+  box-sizing: border-box;
+  width: 100%; 
+  border-collapse: collapse;
+  margin-bottom: 5em;
+}
+
+table, th, td{
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+thead
+{
+  font-family: Fira sans;
+  font-size: clamp(0.5em, 5vw, 1.5em);
+  text-align: center;
+}
+
+tbody
+{
+  font-family: Lora;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: #d2e6c8;
+}
+
+td{
+  height: 5em;
+  width: 100%;
 }
 
 form{
@@ -90,8 +164,7 @@ form{
   flex-direction: column;
 }
 
-input
-{
+input{
     width: 100%;
     font-size: clamp(0.7em, 2vw, 1em);
     padding: 0.6em 0.6em;
@@ -104,8 +177,7 @@ input
     margin-bottom: 1em;
 }
 
-button
-{
+button{
     cursor: pointer;
     width: 100%;
     background-color: #BBAD82;
@@ -114,11 +186,15 @@ button
     border: none;
 }
 
-button:hover
-{
+button:hover{
     background-color: #d2e6c8;
 }
 
+.peliculas-contenedor article{
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0em;
+}
 
 
 footer{
@@ -127,48 +203,69 @@ footer{
   padding: 4em 4em 8em 4em;
 }
 
-#section-redes-sociales
-{
+#section-redes-sociales{
+  h3{
+    padding-top: 1em;
+    margin-bottom: 1em;
+    font-size: clamp(1em, 5svw, 1.5em);
+  }
 
-    h3{
-      padding-top: 1em;
-      margin-bottom: 1em;
-      font-size: clamp(1em, 5svw, 1.5em);
-    }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
 
-    a{
-      text-decoration: none;
-      color: #000;
-    }
-
-    ul{
-      list-style: none;
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: var(--fontFooter);
+    font-size: clamp(0.5em, 5svw, 1em);
+  }
+  
+  li{
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      font-family: var(--fontFooter);
-      font-size: clamp(0.5em, 5svw, 1em);
-    }
-    
-    li{
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
+      flex-direction: column;
+      gap: 1em;
+  }
 
-    img {
-        max-width: 15%;
-        height: auto;
-    }
+  img {
+      max-width: 15%;
+      height: auto;
+  }
 }
 
 /* Mediaqueries */
 
 @media screen and (min-width: 880px)
 {
-    .social-media-links-list img{
-        max-width: 15%;
-        height: auto;
-    }
+  main{
+    padding: 0em 10em;
+  }
+
+  #tarjetas article{
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .habilidades-contenedor{
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3em;
+  }
+  
+  img{
+    max-width: 30%;
+  }
+
+  form{
+    padding: 0em 15em;
+  }
+
+  .social-media-links-list img{
+      max-width: 15%;
+      height: auto;
+  }
 }
 
