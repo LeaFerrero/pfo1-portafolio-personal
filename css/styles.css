@@ -19,7 +19,7 @@ h1, h2, h3{
 }
 
 h1{
-  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-size: clamp(2rem, 5vw, 2.5rem); /* Usco clamp para el tamaño las fuentes asi se adapta mejor a distintos tipos de pantallas */
 }
 
 h2{
@@ -70,20 +70,24 @@ a{
 .section-main{
   display: flex;
   flex-direction: column;
-  margin: 2rem 1rem;
-  animation: show 1.5s ease-in-out;
   margin: 7rem 1rem;
+  gap: 1rem;
 }
 
-img{
-  max-width: 70%;
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article img{
+  max-width: 50%;
 }
 
 .contenedor-texto{
-  margin-bottom: 3rem;
   display: flex;
   flex-direction: column; 
   justify-content: center;
+  gap: 1rem; 
 }
 
 #sobre-mi img, #peliculas img{
@@ -96,14 +100,13 @@ img{
 }
 
 .contenedor-tarjetas{
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 #tarjetas article{
-  display: flex;
-  flex-direction: column;
   background-color: #d2e6c8;
   padding: 2rem;
   transition: all 0.5s;
@@ -160,6 +163,7 @@ tbody tr:nth-child(odd){
 td{
   padding: 1rem;
 }
+
 
 form{
   padding-top: 1rem ;
@@ -222,13 +226,14 @@ footer{
 }
 
 .imagen-redes-sociales{
-  max-width: 20%;
+  max-width: 40%;
   height: auto;
   transition: all 0.5s;
 }
 
+/* Pequeña animacion para las imagenes de las redes sociales, pero sin box-shadow, solo se achica */
 .imagen-redes-sociales:hover{
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 /* Mediaqueries para pantallas mayores a 880 */
@@ -236,13 +241,19 @@ footer{
   main{
     padding: 0 10%;
   }
+
+  article {
+    flex-direction: row;  
+    justify-content: center;
+  }
   
-  img{
-    max-width: 35%;
+  /* Achico un poco las imagenes para que entren mejor y los posters no queden tan grandes */
+  article img{
+    max-width: 25%;
   }
 
   #tarjetas img{
-    max-width: 50%;
+    max-width: 40%;
   }
 
   .contenedor-habilidades{
@@ -253,5 +264,9 @@ footer{
 
   form{
     width: 50%;
+  }
+
+  .imagen-redes-sociales{
+    max-width: 20%;
   }
 }

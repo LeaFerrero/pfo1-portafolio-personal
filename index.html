@@ -24,16 +24,18 @@
         <main>
             <!-- Secion con informacion sobre mi -->
             <section id="sobre-mi" class="section-main">
-                <div class="contenedor-texto">
-                    <h2>Sobre mí</h2>
-                    <p>
-                        Hola, soy Leandro Ferrero, un ex cocinero que, buscando un cambio de rumbo, comenzó a estudiar programación. 
-                        Pasé por la UTN y realicé cursos en Codo a Codo de QA Testing, Fullstack Python y PHP. 
-                        También me especialicé en videojuegos (Unity 2D y 3D) en Talento Tech. 
-                        <strong>Mi misión es fusionar la disciplina de la alta cocina con la lógica del desarrollo de software.</strong>
-                    </p> 
-                </div>
-                <img src="./img/photo.jpeg" alt="foto de leandro ferrero" class="photo">
+                <article>
+                    <div class="contenedor-texto"> <!-- Contenedor de textos para los textos, asi es mas facil aplicar estilos a todos -->
+                        <h2>Sobre mí</h2>
+                        <p>
+                            Hola, soy Leandro Ferrero, un ex cocinero que, buscando un cambio de rumbo, comenzó a estudiar programación. 
+                            Pasé por la UTN y realicé cursos en Codo a Codo de QA Testing, Fullstack Python y PHP. 
+                            También me especialicé en videojuegos (Unity 2D y 3D) en Talento Tech. 
+                            <strong>Mi misión es fusionar la disciplina de la alta cocina con la lógica del desarrollo de software.</strong>
+                        </p> 
+                    </div>
+                    <img src="./img/photo.jpeg" alt="foto de leandro ferrero" class="photo">
+                </article>
             </section>
 
             <!-- Seccion de proyectos destacados -->
@@ -44,31 +46,32 @@
                         Estos son algunos proyectos en los que trabajé durante los cursos que realicé. En este caso, muestro algunos videojuegos que desarrollé utilizando Unity.
                     </p>
                 </div>
-                
-                <article>
-                    <div class="contenedor-texto">
-                        <h3>Spacewars</h3>
-                        <p>
-                            Un proyecto desarrollado en <strong>2D</strong> donde el jugador controla una nave y debe destruir oleadas de enemigos; a medida que avanza,
-                            gana experiencia para adquirir <strong>nuevas armas</strong> y mejorar las estadísticas de su nave, 
-                            inspirándome para este juego en la mecánica de progresión de <em>Vampire Survivors</em>.
-                        </p>
-                    </div>
-                    <img src="./img/Spacewars.png" alt="imagen del juego Spacewars">
-                </article>
+                <div class="contenedor-tarjetas">
+                    <article>
+                        <div class="contenedor-texto">
+                            <h3>Spacewars</h3>
+                            <p>
+                                Un proyecto desarrollado en <strong>2D</strong> donde el jugador controla una nave y debe destruir oleadas de enemigos; a medida que avanza,
+                                gana experiencia para adquirir <strong>nuevas armas</strong> y mejorar las estadísticas de su nave, 
+                                inspirándome para este juego en la mecánica de progresión de <em>Vampire Survivors</em>.
+                            </p>
+                        </div>
+                        <img src="./img/Spacewars.png" alt="imagen del juego Spacewars">
+                    </article>
 
-                <article>
-                    <div class="contenedor-texto">
-                        <h3>Escabio interplanetario</h3>
-                        <p>
-                            Un proyecto desarrollado en <strong>3D</strong> con estilo <strong>collectathon</strong>, 
-                            en el cual el jugador controla a un marciano que debe conseguir vinos y llevarlos a Marte antes de que se acabe el tiempo; 
-                            como se olvidó la billetera y no tiene dinero, debe juntar las botellas que encuentra tiradas en la plaza en la que aterrizó. 
-                            Este desafío técnico me permitió trabajar con <strong>movimiento en tres dimensiones</strong> y lógica de recolección de ítems en Unity.
-                        </p>
-                    </div>
-                    <img src="./img/Escabio-interplanetario.png" alt="imagen del juego Escabio interplanetario">
-                </article>
+                    <article>
+                        <div class="contenedor-texto">
+                            <h3>Escabio interplanetario</h3>
+                            <p>
+                                Un proyecto desarrollado en <strong>3D</strong> con estilo <strong>collectathon</strong>, 
+                                en el cual el jugador controla a un marciano que debe conseguir vinos y llevarlos a Marte antes de que se acabe el tiempo; 
+                                como se olvidó la billetera y no tiene dinero, debe juntar las botellas que encuentra tiradas en la plaza en la que aterrizó. 
+                                Este desafío técnico me permitió trabajar con <strong>movimiento en tres dimensiones</strong> y lógica de recolección de ítems en Unity.
+                            </p>
+                        </div>
+                        <img src="./img/Escabio-interplanetario.png" alt="imagen del juego Escabio interplanetario">
+                    </article>
+                </div>
             </section>
 
             <!-- Seccion de habilidades y hobbies -->
@@ -80,8 +83,8 @@
                         Además, incluyo una lista de los hobbies que más disfruto en mi tiempo libre.
                     </p>                   
                 </div>
-                <div class="habilidades-contenedor">
-                    <article class="habilidades-bloque">
+                <div class="contenedor-habilidades"> <!-- Contenedor de habilidades, asi puedo manejar bien los bloques con flexbox -->
+                    <article class="bloque-habilidades">
                         <table>
                             <thead>
                                 <tr>
@@ -98,7 +101,7 @@
                         </table>
                     </article>
 
-                    <article class="habilidades-bloque">
+                    <article class="bloque-habilidades">
                         <table>
                             <thead>
                                 <tr>
@@ -119,7 +122,7 @@
 
             <!-- Seccion de peliculas favoritas -->
             <section id="peliculas" class="section-main">
-                <div class="texto">   
+                <div class="contenedor-texto">   
                     <h2>Mis 3 Películas Favoritas</h2>
                     <p>
                         Estas son mis 3 películas favoritas de todos los tiempos. Tengo la costumbre de verlas al menos una vez por año; si es en su versión extendida, mejor.                    
