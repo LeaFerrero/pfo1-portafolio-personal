@@ -26,7 +26,7 @@
 </table>
 
 <h3>Uso de Google Fonts:</h3>
-<table width="100%">
+<table width="100%" style="width: 100%">
     <tr><td>[] Enlace a Google Fonts incluido en la sección "head" del HTML.</td></tr>
     <tr><td>[] La tipografía importada se aplica en el sitio.</td></tr>
     <tr><td>[] ¿Por qué elegiste esa fuente? </td></tr>
