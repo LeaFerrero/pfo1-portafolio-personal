@@ -11,7 +11,7 @@ body{
   background-image: url("../img/background.jpg");
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   color: #58180D;
   font-family:  Cinzel;
   padding-bottom: 0.1rem;
@@ -37,13 +37,13 @@ p{
   font-size: clamp(0.8rem, 5vw, 1rem);  
 }
 
-header {
+header{
   background-color: #C9AD6A;
   padding: 3rem 0rem 2rem 0rem;
   text-align: center;
 }
 
-nav {
+nav{
   background-color: #e5d6a7;
   padding: 1rem;
   font-family: Fira Sans;
@@ -62,20 +62,17 @@ main{
   padding: 0rem 2rem;
 }
 
-
 a{
   text-decoration: none;
   color: #000;
 } 
 
-
-.section-main
-{
+.section-main{
   display: flex;
   flex-direction: column;
   margin: 2rem 1rem;
   animation: show 1.5s ease-in-out;
-  margin: 5rem;
+  margin: 7rem 1rem;
 }
 
 img{
@@ -98,6 +95,12 @@ img{
   transition: all 0.5s;
 }
 
+.contenedor-tarjetas{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 #tarjetas article{
   display: flex;
   flex-direction: column;
@@ -116,13 +119,13 @@ img{
   transform: scale(0.9);
 }
 
-.habilidades-contenedor{
+.contenedor-habilidades{
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
-.habilidades-bloque{
+.bloque-habilidades{
   flex: 1;
 }
 
@@ -138,22 +141,19 @@ table, th, td{
   width: 100%;
 }
 
-thead
-{
+thead{
   font-family: Fira sans;
   font-size: clamp(0.5rem, 5vw, 1.5rem);
   text-align: center;
 }
 
-tbody
-{
+tbody{
   font-family: Lora;
   font-weight: 500;
 }
 
 /* Cambio el color de las filas impares de la tabla */
-tbody tr:nth-child(odd)
-{
+tbody tr:nth-child(odd){
   background-color: #d2e6c8;
 }
 
@@ -199,11 +199,10 @@ button:hover{
   margin: 3rem 0rem;
 }
 
-
 footer{
   background-color: #BBAD82;
   text-align: center;
-  padding: 4rem 4rem 8rem 4rem;
+  padding: 3rem 1rem;
 }
 
 .ul-redes-sociales{
@@ -213,6 +212,7 @@ footer{
   justify-content: space-around;
   font-family: Lora;
   font-size: clamp(0.5rem, 5svw, 1rem);
+  margin-top: 1rem;
 }
   
 .li-redes-sociales{
@@ -222,7 +222,7 @@ footer{
 }
 
 .imagen-redes-sociales{
-  max-width: 30%;
+  max-width: 20%;
   height: auto;
   transition: all 0.5s;
 }
@@ -231,14 +231,13 @@ footer{
   transform: scale(0.9);
 }
 
-
 /* Mediaqueries para pantallas mayores a 880 */
 @media screen and (min-width: 880px){
   main{
-    padding: 0rem 15rem;
+    padding: 0 10%;
   }
   
-  img {
+  img{
     max-width: 35%;
   }
 
@@ -246,7 +245,7 @@ footer{
     max-width: 50%;
   }
 
-  .habilidades-contenedor{
+  .contenedor-habilidades{
     flex-direction: row;
     justify-content: space-evenly;
     gap: 3rem;
@@ -254,9 +253,5 @@ footer{
 
   form{
     width: 50%;
-  }
-
-  .imagen-redes-sociales{
-    max-width: 20%;
   }
 }
