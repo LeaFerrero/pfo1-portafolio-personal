@@ -1,11 +1,19 @@
 # Frontend PFO1: Portafolio Personal</h1>
 
+</br>
+
 ## Sobre el Proyecto</h2>
 
 Este proyecto es mi Práctica Formativa Obligatoria 1 (PFO1) de frontend.
 Consiste en una landing page personal que explica un poco quién soy,
 mi aprendizaje por el mundo IT y algunos de mis hobbies.
 Todo bajo una estética inspirada en los manuales de Dungeons & Dragons. En definitiva, es un pequeño manual de quién soy.
+
+</br>
+
+## Enlace a Vercel</h2>
+
+</br>
 
 ## Checklist - Práctica Formativa Obligatoria 1
 
