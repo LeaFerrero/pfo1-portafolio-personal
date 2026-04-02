@@ -1,4 +1,5 @@
 <h1>Frontend PFO1: Portafolio Personal</h1>
+<br>
 <h2>Sobre el Proyecto</h2>
 <p>
     Este proyecto es mi Práctica Formativa Obligatoria 1 (PFO1) de frontend. 
@@ -6,15 +7,15 @@
     mi aprendizaje por el mundo IT y algunos de mis hobbies. 
     Todo bajo una estética inspirada en los manuales de Dungeons & Dragons. En definitiva, es un pequeño manual de quién soy.
 </p>
-
+<br>
 <h2>Checklist - Práctica Formativa Obligatoria 1</h2>
-
+<br>
 <h3>Estructura del Proyecto</h3>
 <table>
-<tr><td>[] Archivo "index.html" ubicado en la raíz.</td></tr>
-    <tr><td>[] Carpeta "css" que contenga el archivo "styles.css".</td></tr>
-    <tr><td>[] (Opcional) Carpeta "img" para recursos gráficos.</td></tr>
-    <tr><td>[] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.</td></tr>
+    <tr><td>[✅] Archivo "index.html" ubicado en la raíz.</td></tr>
+    <tr><td>[✅] Carpeta "css" que contenga el archivo "styles.css".</td></tr>
+    <tr><td>[✅] (Opcional) Carpeta "img" para recursos gráficos.</td></tr>
+    <tr><td>[✅] Archivo "README.md" creado, que incluya una breve descripción del TP y este checklist.</td></tr>
 </table>
 
 <h3>Repositorio y Publicación</h3>
@@ -41,7 +42,7 @@
     <tr><td>[] Se han incluido las metaetiquetas obligatorias: charset y viewport.</td></tr>
     <tr><td>[] Se ha definido un título descriptivo.</td></tr>
     <tr><td>[] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.</td></tr>
-    <tr><td>Secciones obligatorias en "main":</td></tr>
+    <tr><td><b>Secciones obligatorias en "main":</b></td></tr>
     <tr><td>[] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.</td></tr>
     <tr><td>[] Se han insertado al menos 4 comentarios explicativos en el código HTML.</td></tr>
 </table>
