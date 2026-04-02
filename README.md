@@ -58,8 +58,8 @@ https://pfo1-portafolio-personal.vercel.app/
 - [✅] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos.</br>
   Layout y Organización:
 - [✅] Se ha organizado el layout utilizando Flexbox o Grid.
-- [✅] ¿Qué ventajas encontraste al utilizar Flexbox o Grid?
-  Respuesta: Flexbox me resultó mucho más sencillo de aprender que Grid.</br>
+- [✅] ¿Qué ventajas encontraste al utilizar Flexbox o Grid?</br>
+  Respuesta: Flexbox me resultó mucho más sencillo de aprender que Grid.
   La mayor ventaja fue la facilidad con la que pude alinear el contenido y distribuir los espacios de forma dinámica.
 
 ### Estilización de Componentes
