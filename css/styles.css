@@ -83,7 +83,6 @@ article {
   display: flex;
   flex-direction: column; 
   justify-content: center;
-  gap: 1rem; 
 }
 
 #sobre-mi img, #peliculas img{
