@@ -30,8 +30,8 @@ https://pfo1-portafolio-personal.vercel.app/
 
 - [✅] Repositorio en GitHub creado.
 - [✅] Proyecto subido al repositorio.
-- [✅] Proyecto publicado utilizando GitHub Pages y Vercel.
-- [✅] En el "README.md" se indica la URL de GitHub Pages.
+- [✅] Proyecto publicado utilizando Vercel.
+- [✅] En el "README.md" se indica la URL de Vercel.
 
 ### Uso de Google Fonts:
 
@@ -46,7 +46,7 @@ https://pfo1-portafolio-personal.vercel.app/
 - [✅] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
 - [✅] Se han incluido las metaetiquetas obligatorias: charset y viewport.
 - [✅] Se ha definido un título descriptivo.
-- [✅] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
+- [✅] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.</br>
   Secciones obligatorias en "main":
 - [✅] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
 - [✅] Se han insertado al menos 4 comentarios explicativos en el código HTML.
@@ -55,7 +55,7 @@ https://pfo1-portafolio-personal.vercel.app/
 
 - [✅] Existe el archivo "styles.css" con estilos personalizados.
 - [✅] Se utilizan selectores basados en clases e identificadores.
-- [✅] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos.
+- [✅] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos.</br>
   Layout y Organización:
 - [✅] Se ha organizado el layout utilizando Flexbox o Grid.
 - [✅] ¿Qué ventajas encontraste al utilizar Flexbox o Grid?
