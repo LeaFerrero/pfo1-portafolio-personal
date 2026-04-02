@@ -73,4 +73,4 @@ Todo bajo una estética inspirada en los manuales de Dungeons & Dragons. En defi
 
 - [✅] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
 - [✅] Se aplicaron buenas prácticas de accesibilidad (atributos alt en imágenes).
-- [] Se añadieron comentarios adicionales sobre decisiones de diseño.
+- [✅] Se añadieron comentarios adicionales sobre decisiones de diseño.
