@@ -68,7 +68,7 @@ https://pfo1-portafolio-personal.vercel.app/
 - [✅] Se han ajustado las dimensiones utilizando unidades relativas (%, rem, vh).
 - [✅] Se ha implementado al menos una animación o transición (efecto hover).
 - [✅] ¿Qué animación implementaste y por qué?<br>
-  Respuesta:Implementé transiciones de all 0.5s y transformaciones de scale(0.9) con box-shadow en el estado :hover de las tarjetas de proyectos y las imágenes.
+  Respuesta: Implementé transformaciones de scale(0.9) y (0.8) con box-shadow en el estado :hover de las tarjetas de proyectos y las imágenes.
   Consideré que eran adecuadas porque aportan, además de mejorar la experiencia de usuario al resaltar visualmente el elemento seleccionado.
 
 ### Consideraciones Adicionales
